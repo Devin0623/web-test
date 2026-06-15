@@ -1,0 +1,113 @@
+/* 基本重置與字體設定 */
+body {
+    font-family: "Microsoft JhengHei", "Helvetica Neue", Arial, sans-serif;
+    background-color: #f4f6f9;
+    color: #333;
+    text-align: center;
+    margin: 0;
+    padding: 30px 15px;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+h1 {
+    color: #2c3e50;
+}
+
+/* 6 張卡片的大網格排版 */
+.cards-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+/* 單張卡片樣式 */
+.card {
+    background: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    padding: 20px;
+    width: 240px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    transition: transform 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+}
+
+.card h3 {
+    margin-top: 0;
+    color: #34495e;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 10px;
+}
+
+.checkbox-label {
+    display: block;
+    margin-bottom: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #e74c3c;
+}
+
+.magic-checkbox {
+    transform: scale(1.2);
+    margin-right: 8px;
+    cursor: pointer;
+}
+
+/* 卡片內部的數字網格 */
+.number-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
+}
+
+.number-grid span {
+    background: #ecf0f1;
+    padding: 6px 0;
+    border-radius: 4px;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+/* 按鈕與結果區塊 */
+.result-section {
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    display: inline-block;
+    min-width: 300px;
+}
+
+button {
+    padding: 12px 40px;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+#result-display {
+    margin-top: 20px;
+    color: #27ae60;
+    font-size: 28px;
+    margin-bottom: 0;
+}
